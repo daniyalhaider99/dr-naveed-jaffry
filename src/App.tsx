@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { 
-  Instagram, 
-  Facebook, 
+import {
+  Instagram,
+  Facebook,
   MessageCircle,
   Check,
   Star,
@@ -30,7 +30,6 @@ import {
   Activity,
   Footprints,
   PersonStanding,
-  Dumbbell,
   HeartPulse
 } from 'lucide-react';
 
@@ -145,7 +144,7 @@ function App() {
             <div className="logo-icon">DNJ</div>
             <span>Dr. Naveed Jaffry</span>
           </a>
-          
+
           <div className="nav-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -155,7 +154,7 @@ function App() {
             <a href="#contact" className="btn btn-primary nav-cta">Book Consultation</a>
           </div>
 
-          <button 
+          <button
             className={`mobile-menu-btn ${isMobileMenuOpen ? 'active' : ''}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
@@ -186,8 +185,8 @@ function App() {
             </div>
             <h1>Expert <span>Chiropractic</span> Care in Lahore</h1>
             <p className="hero-text">
-              Experience natural pain relief and improved mobility through professional 
-              chiropractic treatments. Dr. Naveed Jaffry provides personalized, drug-free 
+              Experience natural pain relief and improved mobility through professional
+              chiropractic treatments. Dr. Naveed Jaffry provides personalized, drug-free
               musculoskeletal therapy to help you live your best life.
             </p>
             <div className="hero-buttons">
@@ -213,7 +212,7 @@ function App() {
               </div>
             </div>
           </div>
-          
+
           <div className="hero-image">
             <div className="hero-image-wrapper">
               <div className="hero-image-placeholder">
@@ -251,19 +250,19 @@ function App() {
               <span>Years of Excellence</span>
             </div>
           </div>
-          
+
           <div className="about-content">
             <span className="section-subtitle">About Dr. Naveed</span>
             <h2 className="section-title">Dedicated to Your Spinal Health & Wellness</h2>
             <p className="about-text">
-              Dr. Naveed Jaffry is a skilled chiropractic and physiotherapy practitioner based 
-              in Lahore, Pakistan. With over a decade of experience, he specializes in spinal 
-              alignment, pain management, and musculoskeletal rehabilitation using drug-free, 
+              Dr. Naveed Jaffry is a skilled chiropractic and physiotherapy practitioner based
+              in Lahore, Pakistan. With over a decade of experience, he specializes in spinal
+              alignment, pain management, and musculoskeletal rehabilitation using drug-free,
               hands-on techniques.
             </p>
             <p className="about-text">
-              His patient-centered approach focuses on understanding the root cause of your 
-              pain and developing personalized treatment plans that promote natural healing 
+              His patient-centered approach focuses on understanding the root cause of your
+              pain and developing personalized treatment plans that promote natural healing
               and long-term wellness.
             </p>
             <div className="about-features">
@@ -298,11 +297,11 @@ function App() {
             <span className="section-subtitle">Services</span>
             <h2 className="section-title">Comprehensive Chiropractic Care</h2>
             <p className="section-description">
-              From pain relief to preventive care, discover our range of specialized 
+              From pain relief to preventive care, discover our range of specialized
               treatments designed to restore your body's natural balance.
             </p>
           </div>
-          
+
           <div className="services-grid">
             {services.map((service, index) => (
               <div key={index} className="service-card">
@@ -324,11 +323,11 @@ function App() {
             <span className="section-subtitle">Why Choose Us</span>
             <h2 className="section-title">Your Health, Our Priority</h2>
             <p className="section-description">
-              Experience the difference of personalized chiropractic care that puts 
+              Experience the difference of personalized chiropractic care that puts
               your wellbeing first.
             </p>
           </div>
-          
+
           <div className="why-choose-grid">
             {whyChoose.map((item, index) => (
               <div key={index} className="why-card">
@@ -348,11 +347,11 @@ function App() {
             <span className="section-subtitle">Gallery</span>
             <h2 className="section-title">Our Clinic & Practice</h2>
             <p className="section-description">
-              Take a look at our modern facility and see Dr. Naveed in action, 
+              Take a look at our modern facility and see Dr. Naveed in action,
               providing expert care to patients.
             </p>
           </div>
-          
+
           <div className="gallery-grid">
             {galleryImages.map((image) => (
               <div key={image.id} className="gallery-item">
@@ -376,11 +375,11 @@ function App() {
             <span className="section-subtitle">Testimonials</span>
             <h2 className="section-title">What Our Patients Say</h2>
             <p className="section-description">
-              Real stories from real patients who have experienced the transformative 
+              Real stories from real patients who have experienced the transformative
               power of proper chiropractic care.
             </p>
           </div>
-          
+
           <div className="testimonials-grid">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="testimonial-card">
@@ -415,10 +414,10 @@ function App() {
             <span className="section-subtitle">Contact</span>
             <h2 className="section-title">Get in Touch</h2>
             <p className="contact-text">
-              Ready to start your journey to better health? Reach out to schedule 
+              Ready to start your journey to better health? Reach out to schedule
               a consultation or learn more about our services.
             </p>
-            
+
             <div className="contact-methods">
               <div className="contact-method">
                 <div className="contact-method-icon"><MapPin size={24} /></div>
@@ -449,7 +448,7 @@ function App() {
                 </div>
               </div>
             </div>
-            
+
             <div className="contact-social">
               <a href="https://instagram.com/dnj_chiro" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
                 <Instagram size={22} />
@@ -462,7 +461,7 @@ function App() {
               </a>
             </div>
           </div>
-          
+
           <div className="contact-form-wrapper">
             <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
               <div className="form-row">
@@ -494,8 +493,8 @@ function App() {
               </div>
               <div className="form-group">
                 <label htmlFor="message">Your Message</label>
-                <textarea 
-                  id="message" 
+                <textarea
+                  id="message"
                   placeholder="Describe your condition or questions..."
                   rows={4}
                 ></textarea>
@@ -520,7 +519,7 @@ function App() {
                 <span>Dr. Naveed Jaffry</span>
               </a>
               <p>
-                Professional chiropractic care for a healthier, pain-free life. 
+                Professional chiropractic care for a healthier, pain-free life.
                 Experience natural healing through expert manual therapy.
               </p>
               <div className="footer-social">
@@ -535,7 +534,7 @@ function App() {
                 </a>
               </div>
             </div>
-            
+
             <div className="footer-section">
               <h4 className="footer-title">Quick Links</h4>
               <div className="footer-links">
@@ -547,7 +546,7 @@ function App() {
                 <a href="#contact">Contact</a>
               </div>
             </div>
-            
+
             <div className="footer-section">
               <h4 className="footer-title">Working Hours</h4>
               <div className="footer-links">
@@ -559,7 +558,7 @@ function App() {
                 <span className="footer-hours">Closed</span>
               </div>
             </div>
-            
+
             <div className="footer-section">
               <h4 className="footer-title">Contact Info</h4>
               <div className="footer-links footer-contact">
@@ -570,7 +569,7 @@ function App() {
               </div>
             </div>
           </div>
-          
+
           <div className="footer-bottom">
             <p>&copy; {new Date().getFullYear()} Dr. Naveed Jaffry. All rights reserved.</p>
           </div>
